@@ -1,0 +1,35 @@
+#search-bar-wrapper {
+    position: relative;
+}
+
+#search-bar {
+    border-radius: 2px;
+    background-color: #fff;
+    display: block;
+    border: 1px solid #000;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    /* https://stackoverflow.com/a/14701824/17712310 */
+    box-sizing: border-box;
+}
+
+#search-bar:focus {
+    /* https://stackoverflow.com/a/3397158/17712310 */
+    outline: none;
+}
+
+/* https://stackoverflow.com/a/35173334/17712310 */
+
+#search-form {
+    position: relative;
+}
+
+#search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}

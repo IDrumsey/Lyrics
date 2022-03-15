@@ -1,0 +1,17 @@
+html {
+  font-family: "Roboto";
+}
+
+#AppComponent {
+  width: 100vw;
+  height: 100vh;
+}
+
+#body {
+  width: 100%;
+  padding: 50px 0;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}

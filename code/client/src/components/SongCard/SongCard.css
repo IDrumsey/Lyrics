@@ -1,0 +1,31 @@
+.song-card {
+    border: 1px solid #707070;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    transition: box-shadow 100ms linear;
+}
+
+.song-card-hovering {
+    cursor: pointer;
+    box-shadow: 0 2px 5px #000;
+}
+
+.song-info-wrapper {
+    padding: 5px 15px;
+    border-left: 1px solid #707070;
+}
+
+.song-title, .song-artist {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.song-title {
+    font-size: 20px;
+}
+
+.song-artist {
+    font-size: 14px;
+}

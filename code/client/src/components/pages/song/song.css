@@ -1,0 +1,128 @@
+
+#top {
+    width: 100%;
+    position: fixed;
+}
+
+#content-wrapper {
+    margin-top: 135px;
+}
+
+#song-details {
+    margin-bottom: 20px;
+}
+
+#song-title, #song-artist {
+    margin: 0;
+    margin-left: 25px;
+}
+
+#song-title {
+    font-size: 25px;
+}
+
+#song-artist {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#add-button {
+    font-size: 39px;
+    transition: font-size 100ms ease-out;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    font-size: 40px;
+}
+
+#lyric-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 50px;
+}
+
+#back-arrow {
+    position: fixed;
+    left: 25px;
+    bottom: 25px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#body {
+    padding-top: 10px;
+    overflow-y: scroll;
+}
+
+#lyrics-panel {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 10px;
+    /* https://stackoverflow.com/a/49068854/17712310 */
+    display: flex;
+    flex-direction: column;
+}
+
+#options-top, #options-bottom {
+    display: flex;
+}
+
+#options-top {
+    margin-bottom: 20px;
+}
+
+#lyrics-content {
+    font-family: "Roboto";
+    font-size: 15px;
+    margin: 0;
+    /* https://stackoverflow.com/a/14732488/17712310 */
+    overflow-y: auto;
+}
+
+#lyrics-content-editable {
+    border: none;
+    font-family: "Roboto";
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    /* https://css-tricks.com/boxes-fill-height-dont-squish/ */
+    flex: 1;
+    /* https://stackoverflow.com/a/5235160/17712310 */
+    resize: none;
+    width: 100% !important;
+    margin-bottom: 10px;
+}
+
+#lyrics-content-editable:focus {
+    outline: none;
+}
+
+#options-bottom {
+    margin-top: auto;
+}
+
+.lyrics-panel-icon-btn {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#close-btn, #update-btn {
+    margin-left: auto;
+}
+
+#close-btn {
+    color: rgb(167, 45, 45);
+}
+
+#update-btn {
+    color: rgb(26, 105, 88);
+}

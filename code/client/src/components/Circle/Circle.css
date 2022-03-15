@@ -1,0 +1,11 @@
+.circle {
+    display: inline-block;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 100ms ease-out;
+}
+
+.circle:hover {
+    box-shadow: 0 0 5px #5A37C2;
+}
